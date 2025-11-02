@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteer Sign Up Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+    form {
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      max-width: 450px;
+      width: 100%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .checkbox-group, .availability {
+      margin-top: 10px;
+    }
+    .checkbox-group label, .availability label {
+      display: inline-block;
+      margin-right: 10px;
+      font-weight: normal;
+    }
+    button {
+      background: #007bff;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 15px;
+      width: 100%;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<form>
+  <h2>Volunteer Sign Up Form</h2>
+  <p>Please fill out the following form to become a volunteer.</p>
+
+  <label>First Name</label>
+  <input type="text" placeholder="Enter your first name">
+
+  <label>Last Name</label>
+  <input type="text" placeholder="Enter your last name">
+
+  <label>Email</label>
+  <input type="email" placeholder="Enter your email address">
+
+  <label>Phone Number</label>
+  <input type="tel" placeholder="Enter your phone number">
+
+  <label>Date of Birth</label>
+  <input type="date">
+
+  <label>Preferred Volunteer Role</label>
+  <select>
+    <option>Select your preferred volunteer role</option>
+    <option>Mentor</option>
+    <option>Event Helper</option>
+    <option>Teacher</option>
+  </select>
+
+  <h3>Availability</h3>
+  <div class="availability">
+    <label><input type="checkbox"> Monday</label>
+    <label><input type="checkbox"> Tuesday</label>
+    <label><input type="checkbox"> Wednesday</label>
+    <label><input type="checkbox"> Thursday</label>
+    <label><input type="checkbox"> Friday</label>
+    <label><input type="checkbox"> Saturday</label>
+    <label><input type="checkbox"> Sunday</label>
+  </div>
+
+  <label>Available Start Time</label>
+  <input type="time">
+
+  <label>Available End Time</label>
+  <input type="time">
+
+  <h3>Skills and Interests</h3>
+  <label>Skills and Experience</label>
+  <textarea placeholder="Enter your skills and experience"></textarea>
+
+  <label>Interests</label>
+  <div class="checkbox-group">
+    <label><input type="checkbox"> Animals</label>
+    <label><input type="checkbox"> Children</label>
+    <label><input type="checkbox"> Elderly</label>
+    <label><input type="checkbox"> Environment</label>
+    <label><input type="checkbox"> Health</label>
+    <label><input type="checkbox"> Homelessness</label>
+    <label><input type="checkbox"> Poverty</label>
+  </div>
+
+  <label><input type="checkbox"> I agree to the terms and conditions of the volunteer program.</label>
+
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
